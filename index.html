@@ -1,119 +1,149 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>星火商店</title>
-        <style>
-            ul
-            {
-                list-style-type:none;
-                margin:8px;
-                padding:16px;
-                background-color: #ffffffce;
-            }
-            li a {
-                color: #000;
-                padding: 8px 16px;
-                text-decoration: none;
 
-            }
-            li
-            {
-                display:inline;
-            }
-            li a:hover {
-                background-color: #555;
-                color: white;
-            }
-            p.title {font-family:"大标题字体.otf";font-size:60px;margin:0}
-            p.title2 {font-family:"./大标题字体.otf";font-size:30px;margin:0}
-            .button {
-                background-color: white; /* Green */
-                border: gray;
-                border-style: solid;
-                border-width: 2px;
-                color: black;
-                padding: 5px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-            }
-            .button span {
-                cursor: pointer;
-                display: inline-block;
-                position: relative;
-                transition: 0.5s;
-              }
+<head>
+    <meta charset="utf-8">
+    <title>星火商店</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 8px;
+            padding: 16px;
+            background-color: #ffffffce;
+        }
 
-            .button span:after {
-                content: '»';
-                position: absolute;
-                opacity: 0;
-                top: 0;
-                right: -20px;
-                transition: 0.5s;
-            }
+        li a {
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
 
-            .button:hover span {
-                padding-right: 25px;
-            }
-            
-            .button:hover span:after {
-                opacity: 1;
-                right: 0;
-            }
-            .button1 {
-                border-radius: 12px;
-            }
-            div.static {
-                position: fixed;
-                top:0;
-            }
-        </style>
-        <script>
-            function jump(){
-                window.location.href="http://blog.sina.com.cn/mleavs";
-            }
-</script>
+        li {
+            display: inline;
+        }
 
-    </head>
-    <body>
-        <div id="header" style="width:100%" class="static">
-            <ul align="right">
-                <li style="float:left"><a href="index.html">Spark store</a></li>
-                <li><a href="index.html">主页</a></li>
-                <li><a href="https://www.deepinos.org">博客</a></li>
-                <li><a href="https://www.deepinos.org">论坛</a></li>
-                <li><a href="about.html">关于</a></li>
-            </ul>
-        </div>
-        <div id="container2" style="width:100%">
-            <p>&nbsp; </p>
-        </div>
-        <div id="container" style="width:100%">
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        .title {
+            font-family: "大标题字体.otf";
+            font-size: 100px;
+            margin:0;
+        }
+
+        .title2 {
+            font-family: "./大标题字体.otf";
+            font-size: 30px;
+            margin: 0;
+            color: rgb(80, 80, 80);
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+            font-weight: lighter;
+        }
+
+        .button {
+            background-color: white;
+            /* Green */
+            border: gray;
+            border-style: solid;
+            border-width: 2px;
+            color: black;
+            padding: 5px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .button1 {
+            border-radius: 12px;
+        }
+
+        div.static {
+            position: fixed;
+            top: 0;
+        }
+        .top-logo{
+            float: left;
+            font-size: 20px;
+            font-weight:bolder;
+        }
+        #container2{
+            height: 100px;
+        }
+    </style>
+    <script>
+        function jump() {
+            window.location.href = "http://blog.sina.com.cn/mleavs";
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="header" style="width:100%" class="static">
+        <ul align="right">
+            <li class="top-logo"><a href="index.html">Spark store</a></li>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="https://www.deepinos.org">博客</a></li>
+            <li><a href="https://www.deepinos.org">论坛</a></li>
+            <li><a href="about.html">关于</a></li>
+        </ul>
+    </div>
+    <div id="container2" style="width:100%">
+        <p>&nbsp; </p>
+    </div>
+    <div id="container" style="width:100%">
         <table width="100%" border="0">
             <tr>
                 <td style="background-image:url('./波纹0.svg');
                            background-size:100% 100%;
                            background-repeat:no-repeat;">
-                    <h1>
-                        <center>
+                    <center>
+                        <h1>
                             <p class="title" style="margin-top:0px;">Spark Store</p>
                             <p class="title2">笔尖一触即是万物</p>
-                        </center>
-                    </h1>
-                    <center>
-                        <button class="button button1" onclick="jump()"><span>了解更多</span></button>
+                        </h1>
+                        <div>
+                            <button class="button button1" onclick="jump()"><span>了解更多</span></button>
+                            <button class="button button1" onclick="jump()"><span>下载体验</span></button>
+                        </div>
                     </center>
-                    <center>
-                        <button class="button button1" onclick="jump()"><span>下载体验</span></button>
-                    </center>
+
                 </td>
             </tr>
         </table>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>
