@@ -1,6 +1,10 @@
 ::selection{
     background:rgb(196, 196, 196);
 }
+@font-face{
+    font-family: 'Light';
+    src: url("../fonts/Comfortaa-Light.ttf")
+}
 ul {
     list-style-type: none;
     margin: 8px;
@@ -13,25 +17,27 @@ li a {
     padding: 8px 16px;
     text-decoration: none;
     transition: all 0.3s;
+    font-family:'Light';
 }
 
 li {
     display: inline;
+    float:right;
 }
 
 li a:hover {
-    background-color: #555;
-    color: white;
+    background-color: #ffffffce;
+    color: gray;
 }
 
 .title {
-    font-family: "大标题字体.otf";
+    font-family: 'Light';
     font-size: 100px;
     margin:0;
 }
 
 .title2 {
-    font-family: "./大标题字体.otf";
+    font-family: "light";
     font-size: 30px;
     margin: 0;
     color: rgb(80, 80, 80);
@@ -83,6 +89,7 @@ li a:hover {
 
 .button1 {
     border-radius: 12px;
+    font-family:'Light';
 }
 
 div.static {
@@ -96,4 +103,21 @@ div.static {
 }
 #container2{
     height: 100px;
+}
+div.get_the_top
+{
+    position:relative;
+    top:30px
+}
+div.pos_down
+{
+    position:relative;
+    top:50px;
+    width:33%;
+    height:200px;
+    float:left;
+}
+div.center
+{
+width: 75%; height: 100px; margin: 0 auto;
 }
