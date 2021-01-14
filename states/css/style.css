@@ -7,38 +7,105 @@
 }
 ul {
     list-style-type: none;
-    margin: 8px;
-    padding: 16px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: #ffffffce;
-}
-
-li a {
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: all 0.3s;
-    font-family:'Light';
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 li {
-    display: inline;
-    float:right;
+    float: right;
 }
 
-li a:hover {
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ffffffce;
+    color:gray;
+}
+
+.active {
     background-color: #ffffffce;
     color: gray;
 }
+/*-- this is the lead line */
+.dropbtn {
+    background-color: #ffffffce;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float:right;    
+    font-weight:bolder;
+}
 
+.dropdown {
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    width:100%;
+}
+.dropdown2 {
+    display: inline-block;
+    float:right;
+}
+
+/* this is for down-button*/
+@media screen and (min-width:800px)
+{
+    .dropdown {
+        display:none;
+    }
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    top:50px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right:0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    right:0;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown2:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown2:hover .dropbtn {
+    background-color: #9fffefce;
+}
+/* 下拉菜单 */
 .title {
     font-family: 'Light';
-    font-size: 100px;
+    font-size: 80px;
     margin:0;
 }
 
 .title2 {
     font-family: "light";
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
     color: rgb(80, 80, 80);
     margin-top: 1rem;
@@ -91,11 +158,22 @@ li a:hover {
     border-radius: 12px;
     font-family:'Light';
 }
-
 div.static {
+    z-index: 99999;
     position: fixed;
     top: 0;
+    width:100%;
 }
+@media screen and (max-width:800px)
+{
+    div.static {
+        display:none;
+        position: fixed;
+        top: 0;
+        width:100%;
+    }
+}
+
 .top-logo{
     float: left;
     font-size: 20px;
@@ -120,4 +198,31 @@ div.pos_down
 div.center
 {
 width: 75%; height: 100px; margin: 0 auto;
+}
+@media screen and (max-width: 800px){
+    div.pos_down
+    {
+        position:relative;
+        top:50px;
+        width:50%;
+        height:250px;
+        float:left;
+    }
+    div.center{
+        width: 95%; height: 100px; margin: 0 auto;
+    }
+}
+@media screen and (max-width: 500px){
+    div.pos_down
+    {
+        position:relative;
+        top:50px;
+        width:100%;
+        height:200px;
+        float:left;
+        left:10px;
+    }
+    div.center{
+        width: 90%; height: 100px; margin: 0 auto;
+    }
 }
